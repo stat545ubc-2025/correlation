@@ -1,14 +1,16 @@
 Package: correlation
 Title: Simple Tools for Exploring Linear Relationships
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
+    person("Hasti", "Jalali", , "hastii.jalali@gmail.com", role = c("aut", "cre"))
 Description: Provides a lightweight function for fitting a simple linear 
     regression between two numeric variables and returning the slope, 
     intercept, and R-squared value in a tidy tibble. Useful for quick 
     exploratory analysis and teaching basic regression concepts.
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+License: MIT + file LICENSE
 Encoding: UTF-8
+Imports:
+    stats,
+    tibble
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2

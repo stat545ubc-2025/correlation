@@ -28,14 +28,14 @@ linear_summary <- function(data, x, y) {
     stop("Columns must be numeric.")
   }
 
-  model <- lm(data[[y]] ~ data[[x]])
+  model <- stats::lm(data[[y]] ~ data[[x]])
   summary_info <- summary(model)
 
   tibble::tibble(
     predictor = x,
     response = y,
-    slope = unname(coef(model)[2]),
-    intercept = unname(coef(model)[1]),
+    slope = unname(stats::coef(model)[2]),
+    intercept = unname(stats::coef(model)[1]),
     r_squared = unname(summary_info$r.squared)
   )
 }
