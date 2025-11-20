@@ -1,6 +1,6 @@
 Package: correlation
 Title: Simple Tools for Exploring Linear Relationships
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: 
     person("Hasti", "Jalali", , "hastii.jalali@gmail.com", role = c("aut", "cre"))
 Description: Provides a lightweight function for fitting a simple linear 
